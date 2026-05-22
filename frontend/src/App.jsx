@@ -51,8 +51,8 @@ function App() {
               
               <h2 className="text-sm font-semibold text-neutral-400 uppercase tracking-wider mb-6">Current Translation</h2>
               
-              <div className="flex flex-col items-center justify-center p-8 bg-neutral-950/50 rounded-2xl border border-neutral-800/50 shadow-inner">
-                <span className="text-8xl font-bold bg-gradient-to-b from-white to-neutral-400 bg-clip-text text-transparent drop-shadow-sm">
+              <div className="flex flex-col items-center justify-center p-8 bg-neutral-950/50 rounded-2xl border border-neutral-800/50 shadow-inner overflow-hidden min-h-[160px]">
+                <span className={`${currentSign.length > 2 ? 'text-4xl' : 'text-8xl'} font-bold bg-gradient-to-b from-white to-neutral-400 bg-clip-text text-transparent drop-shadow-sm text-center`}>
                   {currentSign}
                 </span>
               </div>
